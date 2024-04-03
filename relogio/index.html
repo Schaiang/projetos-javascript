@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relógio Analógico Digital</title>
+    <style>
+      #digital {
+        font-size: 24px;
+      }
+      #analogico {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        position: relative;
+      }
+      .ponteiro {
+        position: absolute;
+        background-color: #000;
+        transform-origin: center;
+      }
+      #hora {
+        width: 6px;
+        height: 40px;
+      }
+      #minuto {
+        width: 4px;
+        height: 60px;
+      }
+      #segundo {
+        width: 2px;
+        height: 80px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="digital"></div>
+    <div id="analogico">
+      <div class="ponteiro" id="hora"></div>
+      <div class="ponteiro" id="minuto"></div>
+      <div class="ponteiro" id="segundo"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
